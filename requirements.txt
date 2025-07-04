@@ -1,0 +1,4 @@
+pycryptodome
+opencv-python
+numpy
+pillow
