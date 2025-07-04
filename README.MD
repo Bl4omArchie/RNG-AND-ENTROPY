@@ -23,8 +23,13 @@ source rng/bin/activate
 pip3 install -r requirements.txt
 ```
 
-4- Launch whatever script you want
+
+# Features
 
 - camera_byte_stream : use your camera to gather pixels and use shot noise to create random numbers
-- aes_picture_encrypt : encrypt and decrypt pictures using AES
+
+- aes_picture_encrypt : encrypt and decrypt pictures using AES. 
+
 - entropy_calculator : compute the entropy of a given file
+
+You can launch each script individually.
