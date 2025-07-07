@@ -15,7 +15,6 @@ def entropy(image_path):
 
 
 if __name__ == "__main__":
-    print(entropy("pic/originals/linux.png"))
-    print(entropy("pic/originals/logo_discord.png"))
-    print(entropy("pic/encrypted/encrypted_0.png"))
-    print(entropy("pic/encrypted/encrypted_2.png"))
+    print(entropy("pic/logo.png"))
+    print(entropy("pic/wallpaper.png"))
+    print(entropy("pic/logo_encrypted.png_decrypted.png"))
