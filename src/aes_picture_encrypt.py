@@ -72,7 +72,7 @@ class Picture_Encryption(AES_interface):
         if os.path.exists(folder):
             for filename in os.listdir(folder):
                 full_path = os.path.join(folder, filename)
-                img = get_image_from_path(full_path, format_file)
+                img = get_image_from_path(picture_path=full_path, status="plaintext", format_file=format_file)
                 if img != -1:
                     pics.append(img)
         
@@ -119,14 +119,8 @@ class Picture_Encryption(AES_interface):
                 iv_or_nonce=pic.iv
             )
 
-            self.pictures.append(Picture(
-                name=dec_name,
-                path=dec_path,
-                image=decrypted_img,
-                data=np.array(decrypted_img),
-                data_bytes=np.array(decrypted_img).tobytes(),
-                state="decrypted"
-            ))
+            self.pictures.append(get_image(name=dec_name, path=dec_path, image=decrypted_img, status="decrypted"))
+
 
     def get_state(self) -> None:
         print("========================")
