@@ -28,13 +28,14 @@ pip3 install -r requirements.txt
 
 - camera_byte_stream : use your camera to gather pixels and use shot noise to create random numbers
 
-- aes_picture_encrypt : encrypt and decrypt pictures using AES. New : streamlit dashboard for encrypting and decrypting a file
+- aes_picture_encrypt : encrypt and decrypt pictures using AES with pycryptodome library.
 
+- streamlit dashboard for AES encryption :
 ![Streamlit dashboard preview for AES picture encryption](preview.png)
 
 Use this command to launch the dashboard :
 ```bash
-streamlit run aes_picture_encrypt.py 
+streamlit run main.py 
 ```
 
 - entropy_calculator : compute the entropy of a given file
