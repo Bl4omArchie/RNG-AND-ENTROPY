@@ -26,5 +26,6 @@ def stream_camera():
         cap.release()
         cv2.destroyAllWindows()
 
+
 if __name__ == "__main__":
     stream_camera()
